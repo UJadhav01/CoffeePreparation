@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Coffee Survey</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>All About Coffee</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#index.html">Home</a></li>
+          <li><a href="roasting.html" target="_blank">Roasting</a></li>
+          <li><a href="grinding.html" target="_blank">Grinding</a></li>
+          <li><a href="brewing.html" target="_blank">Brewing</a></li>
+          <li><a href="drinks.html" target="_blank">Drinks</a></li>
+          <li><a href="survey.html" target="_blank">Coffee Survey</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Coffee Survey</h1>
+    <aside>
+      <figure>
+        <img src="images/espresso.jpg" alt="a cup of espresso" />
+        <figcaption>A cup of espresso coffee</figcaption>
+      </figure>
+    </aside>
+    <form action="coffee-survey.php" method="post" class="surveyform">
+      <fieldset>
+        <legend>Personal Information:</legend>
+       <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;Your Name: </label>
+        <input type="text" name="name" required size="40" /><br/><br/>
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="enter valid email address"
+          required
+          size="40"
+        /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Your Coffee Preferences:</legend>
+        Tell us your coffee preparation methods.<br />
+        <textarea name="preparation" cols="40" rows="6"></textarea><br /><br />
+        Do you grind your own beans?<br />
+        <input type="radio" name="grind" value="yes" /> yes <br />
+        <input type="radio" name="grind" value="no" /> no <br />
+        <br />
+        How do you drink your coffee?<br />
+        <input type="checkbox" name="drink" value="sugar" /> with sugar <br />
+        <input type="checkbox" name="drink" value="cream" /> with cream <br />
+        <br />
+        What is your favorite coffee drink? <br />
+        <select name="favorite">
+          <option value="">please select a drink</option>
+          <option value="drip">drip coffee</option>
+          <option value="french">french press</option>
+          <option value="espresso">espresso</option>
+          <option value="latte">latte</option>
+          <option value="flavored">flavored</option>
+        </select><br/><br/>
+        <button class="btn" type="submit" value="submit">Submit</button>
+        <button class="btn" type="reset" value="reset">Reset</button>
+
+
+      </fieldset>
+    </form>
+    <footer>
+      <p style="margin-left: 10px;    color: rgb(167, 25, 25);">
+          <strong> Follow Us:  </strong>  &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://twitter.com/" alt="Twitter Profile" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://in.linkedin.com" alt="linkedin Profile" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.facebook.com/" alt="Facebook Profile" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+  <a href="" alt="Instagram Profile" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.youtube.com/" alt="youtube chanel" target="_blank"><i class="fa fa-youtube"></i></a>
+      </p>
+  </footer>
+  </body>
+</html>
